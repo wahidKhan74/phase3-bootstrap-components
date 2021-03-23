@@ -1,0 +1,19 @@
+.main-form{
+    width: 50%;
+    margin: auto;
+}
+.mt-10{
+    margin-top: 10%;
+}
+
+fieldset{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.pagination {
+    margin: 0px !important;
+    position: absolute;
+    left: 70%;
+    bottom: 50%;
+}

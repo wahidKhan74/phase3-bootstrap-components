@@ -1,0 +1,14 @@
+.main-form{
+    width: 600px;
+    margin: auto;
+}
+.mt-6{
+    margin-top: 10%;
+}
+
+.pagination-user{
+    width: 50px;
+    margin: auto;
+    margin-left: 40%;
+    margin-right: 40%;
+}

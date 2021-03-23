@@ -1,0 +1,28 @@
+.container-bg{
+    background-color: aquamarine;
+    height: 400px;
+}
+
+.bg1{
+    background-color: blue;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.bg2{
+    background-color: rgb(9, 255, 0);
+    height: 250px;
+    border: 1px solid black;
+}
+
+.bg3{
+    background-color: rgb(255, 0, 55);
+    height: 250px;
+    border: 1px solid black;
+}
+
+.bg4{
+    background-color: rgb(255, 0, 212);
+    height: 250px;
+    border: 1px solid rgb(20, 4, 16);
+}

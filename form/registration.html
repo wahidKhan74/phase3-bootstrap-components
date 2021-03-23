@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Bootstrap Form</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="users.html">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- User Registration form  -->
+    <form action="/registration" method="post" class="main-form mt-10 needs-validation" novalidate>
+        <fieldset>
+            <legend>Registration Form  </legend>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="username">Username :</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter User name" required>
+                    <small id="usernameHelp" class="form-text text-muted">This should be Your username</small>
+                    <div class="valid-feedback">
+                        Username is Perfect !
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter a correct userame !
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email :</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter User name" required>
+                    <small id="emailHelp" class="form-text text-muted">This should be Your email</small>
+                    <div class="invalid-feedback">
+                        Please Enter a correct email !
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="password">Password :</label>
+                    <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Enter User name" required>
+                    <small id="passwordHelp" class="form-text text-muted">This should be Your password</small>
+                    <div class="invalid-feedback">
+                        Please Enter a correct password !
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cnfPasssword">Confirm Password :</label>
+                    <input type="password" class="form-control" id="cnfPasssword" aria-describedby="cnfPassswordHelp" placeholder="Enter User name" required>
+                    <small id="cnfPassswordHelp" class="form-text text-muted">This should be Your cnfPasssword</small>
+                    <div class="invalid-feedback">
+                        Please Enter a correct password !
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md">
+                    <label for="roles">Roles :</label>
+                    <select class="form-control" id="roles">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="vendor">Vendor</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+    </fieldset>
+    </form>
+    <script >
+        var form = document.querySelector(".needs-validation");
+        form.addEventListener('submit',function(event){
+            if(form.checkValidity() === false){
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add("was-validated")
+        })
+    </script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
